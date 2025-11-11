@@ -1,60 +1,161 @@
-<DOCTYPE html>
-    <head>
-        <title>BootStrap Demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-       </head> 
-       
-       <body>
-        <div class = "container-fluid py-5 text-start text-sm-center"> 
-<h1> fw-bold" my first bootstrap page</h1>
-<p1>Resize this responsive page to see the effect</p1>
-<h1 class="display-1">Display 1</h1>
-<h1 class="display-2">Display 2</h1>
-<h1 class="display-3">Display 3</h1>
-<h1 class="display-4">Display 4</h1>
-<h1 class="display-5">Display 5</h1><!-- New -->
-<h1 class="display-6">Display 6</h1><!-- New -->
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Dis abled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Liam's Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid py-5 text-start text-sm-center" >
+    <h1 class="display-5 fw-bold">Liam's Bootstrap Page</h1>
+    <p class="col-md-8 fs-4"><p>Resize this responsive page to see the effect! Go on! Try it!</p>
   </div>
 
-        </div>
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/icon.jpg" alt="logo" width="30" height="30"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarBasic">
+        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Art</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="#">BlueSky</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Games
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">ArcLines</a></li>
+              <li><a class="dropdown-item" href="#">Crabby The Crab</a></li>
+              <li><a class="dropdown-item" href="#">The Mannequin Museum</a></li>
+            </ul>
+          </li>
+          
+      </div>
+    </div>
+  </nav>  
+  
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 style="text-align: center;">ArcLines</h3>
+      <p>A webcomic in the world of Arcaea, where imagination is the only limit.</p>
+      <p>Join Speedy Arc and friends this 2026.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="text-align: center;">Crabby The Crab</h3>
+      <p>The Evil "Sharko Crackjaw" has stolen the Core Crystals.</p>
+      <p>Help Crabby retrive the mystical gems, Released 2022.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="text-align: center;">The Mannequin Museum</h3>        
+      <p>The digital museum raised in honour of a long gone game dev gone wrong.</p>
+      <p>Join us as you explore the digital horror show. Released 2024.</p>
+    </div>
+  </div>
+</div>
 
-        </body>
+
+
+<!-- Carousel https://getbootstrap.com/docs/5.3/components/carousel/ -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
     
-</DOCTYPE>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/arclines.jpg" alt="ArcLines" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3 style="background-color: black;">ArcLines</h3>
+          <p style="background-color: black;">© Great Star</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/crabby game.JPG" alt="Crabby The Crab" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3 style="background-color: black;">Crabby The Crab</h3>
+          <p style="background-color: black;">© Great Star</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="assets/manny.jpg" alt="The Manequin Museum" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3 style="background-color: black;">The Manequin Museum</h3>
+          <p style="background-color: black;">© Studio 666</p>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+   <!-- Card https://getbootstrap.com/docs/5.3/components/card/ -->
+  <div class="card" style="width: 300px;">
+    <img src="assets/icon.jpg" class="card-img-top" alt="...">
+    <div class="card-body text-center">
+        <h5 class="card-title">Liam Murray</h5>
+        <p class="card-text">Liam Murray is a Student at UWS studying Computer Games Development. On the side, he's a writer, currently writing a comic called "ArcLines" in his spare time.</p>
+        <a href="https://bsky.app/profile/arclines.bsky.social" class="btn btn-primary">BlueSky</a>
+    </div>
+</div>
+
+<!-- Accordian https://getbootstrap.com/docs/5.3/components/accordion/ -->
+<div class="m-4">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What is ArcLines</button>									
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>ArcLines is an Indie Webcomic made by a small group of writers and artists. It is an anthology comic set on the planet "Arcaea", set to release in 2026. <a href="https://bsky.app/profile/arclines.bsky.social" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. What is Crabby The Crab?</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p> Crabby The Crab is a small indie platformer created by myself for a High School Games Dev class in 2022, with further plans to develop into a bigger game. <a href="https://bsky.app/profile/arclines.bsky.social" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. What is The Manequin Museum</button>                     
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <p>Manequin Museum is an indie horrro game made for a UWS Games Dev Module with myself, Leo Miller and Sean Keavney. <a href="https://youtu.be/KNMk5rasSdA" target="_blank">Learn more.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
