@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--https://bulma.io/documentation/start/overview/ -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma (not from Dragon Ball)!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+
+  <script>
+    bulmaCarousel.attach('#slider', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        autoplay: true,
+    });
+</script>
+<style>
+  .slider-text {
+    position: absolute;
+    right: 0;
+    bottom: 0
+  }
+  
+#slider .card-content{
+    max-width: 50%;
+  }
+  
+#slider{
+    overflow: hidden;
+  }
+  
+@media screen and (max-width: 1023px) {
+    #slider .card-content{
+      display: none;
+    }
+  }
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.item-slide img {
+  max-width: 1200px;
+}
+
+.caption-container {
+  color: white;
+}
+</style>
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="panel">
+        <p class="panel-heading">Liam's Bulma page</p>
+        <div class="panel-block">
+          <p>Not from Dragon Ball. Anyway, resize.</p>
+        </div>
+      </div>
+
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                  <img src="./assets/icon.jpg">
+
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                  data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item">
+                    Art
+                  </a>
+                  <a class="navbar-item">
+                    Bluesky
+                  </a>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Elements
+                    </a>
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">
+                        Shapes
+                      </a>
+                      <a class="navbar-item is-selected">
+                        Village
+                      </a>
+                      <a class="navbar-item">
+                        Collisons and Player
+                      </a>
+                      <a class="navbar-item">
+                        Scene
+                      </a>
+                      <a class="navbar-item">
+                        GUI
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="columns">
+      <div class="column">
+        <h2>ArcLines</h2>
+        <p>A webcomic in the world of Arcaea, where imagination is the only limit.</p>
+      </div>
+      <div class="column">
+        <h2>Crabby The Crab</h2>
+        <p>The Evil "Sharko Crackjaw" has stolen the Core Crystals. Help Crabby regain them.</p>
+      </div>
+      <div class="column">
+        <h2>The Mannequin Museum</h2>
+      <p>Horror game about a digital museum raised in honour of a long gone game dev gone wrong.</p>
+      </div>
+    </div>
+
+<!-- https://www.wplogout.com/create-a-simple-carousel-slider-in-bulma/-->
+
+<div id="slider">
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-16by9 is-covered">
+           <img src="./assets/arclines.jpg" alt="" />
+       </figure>
+       </div>
+        <div class="card-content slider-text">
+           <div class="is-size-5 box">
+               ArcLines
+            </div>
+     </div>
+</div>
+  </div>
+
+    <h1 class="title">
+      Sup Pups!
+    </h1>
+    <p class="subtitle">
+      My first website with <strong>Bulma</strong>! (not dra-... okay the jokes dead.)
+    </p>
+    </div>
+
+
+
+    <div>
+      <button class="button is-primary">
+        Button Uno
+      </button>
+      <button class="button is-link">
+        Button Dos
+      </button>
+      <button class="button is-info">
+        Button Tres
+      </button>
+      <button class="button is-success">
+        Button Four (forgot the spanish)
+      </button>
+      <button class="button is-warning">
+        Button Five
+      </button>
+      <button class="button is-danger">
+        Button Six
+      </button>
+    </div>
+
+    <div>
+      <button class="button is-small">
+        Button A
+      </button>
+      <button class="button">
+        Button B
+      </button>
+      <button class="button is-medium">
+        Button C
+      </button>
+      <button class="button is-large">
+        Button D
+      </button>
+    </div>
+
+    <div>
+      <button class="button is-primary is-outlined">
+        Button Alpha
+      </button>
+      <button class="button is-loading">
+        Button Beta
+      </button>
+      <button class="button" disabled>
+        Button Gamma
+      </button>
+    </div>
+
+   
+
+    Dropdown Field
+    </span>
+    <div class="field">
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>Red Pill</option>
+            <option>Blue Pill</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <br>
+
+  </section>
+</body>
+
+</html>
